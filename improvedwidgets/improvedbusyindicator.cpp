@@ -15,7 +15,7 @@ ImprovedBusyIndicator::ImprovedBusyIndicator(QWidget *parent) :
 
     mFillColor = palette().color(QPalette::WindowText);
 
-    mTimer.setInterval(50);
+    mTimer.setInterval(100);
     connect(&mTimer, SIGNAL(timeout()), this, SLOT(rotate()));
     mTimer.start();
 }
