@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/frame.png</file>
+        <file>images/lineedit.png</file>
+    </qresource>
+</RCC>
