@@ -1,18 +1,19 @@
 #include "improvedlineeditplugin.h"
 #include "improvedmessagewidgetplugin.h"
+#include "improvedbusyindicatorplugin.h"
 #include "improvedwidgets.h"
 
 ImprovedWidgets::ImprovedWidgets(QObject *parent)
     : QObject(parent)
 {
-    m_widgets.append(new ImprovedLineEditPlugin(this));
-    m_widgets.append(new ImprovedMessageWidgetPlugin(this));
-
+    mWidgets.append(new ImprovedLineEditPlugin(this));
+    mWidgets.append(new ImprovedMessageWidgetPlugin(this));
+    mWidgets.append(new ImprovedBusyIndicatorPlugin(this));
 }
 
 QList<QDesignerCustomWidgetInterface*> ImprovedWidgets::customWidgets() const
 {
-    return m_widgets;
+    return mWidgets;
 }
 
 #if QT_VERSION < 0x050000

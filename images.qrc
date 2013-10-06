@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>images/frame.png</file>
         <file>images/lineedit.png</file>
+        <file>images/busyindicator.png</file>
     </qresource>
 </RCC>

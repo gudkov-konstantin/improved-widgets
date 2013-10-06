@@ -6,22 +6,22 @@
 ImprovedLineEditPlugin::ImprovedLineEditPlugin(QObject *parent)
     : QObject(parent)
 {
-    m_initialized = false;
+    mInitialized = false;
 }
 
 void ImprovedLineEditPlugin::initialize(QDesignerFormEditorInterface * /* core */)
 {
-    if (m_initialized)
+    if (mInitialized)
         return;
 
     // Add extension registrations, etc. here
 
-    m_initialized = true;
+    mInitialized = true;
 }
 
 bool ImprovedLineEditPlugin::isInitialized() const
 {
-    return m_initialized;
+    return mInitialized;
 }
 
 QWidget *ImprovedLineEditPlugin::createWidget(QWidget *parent)

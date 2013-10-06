@@ -5,12 +5,14 @@ TEMPLATE    = lib
 HEADERS     = \
     improvedlineeditplugin.h \
     improvedmessagewidgetplugin.h \
-    improvedwidgets.h
+    improvedwidgets.h \
+    improvedbusyindicatorplugin.h
 
 SOURCES     = \
     improvedlineeditplugin.cpp \
     improvedmessagewidgetplugin.cpp \
-    improvedwidgets.cpp
+    improvedwidgets.cpp \
+    improvedbusyindicatorplugin.cpp
 
 RESOURCES   = \
     images.qrc \
@@ -29,15 +31,12 @@ INSTALLS    += target
 
 include(improvedmessagewidget.pri)
 include(improvedlineedit.pri)
+include(improvedbusyindicator.pri)
 
 OTHER_FILES += \
-    images/warning.png \
-    images/positive.png \
     images/lineedit.png \
-    images/info.png \
     images/frame.png \
-    images/error.png \
-    images/clear_left.png \
+    images/busyindicator.png \
     improvedwidgets/images/warning.png \
     improvedwidgets/images/positive.png \
     improvedwidgets/images/information.png \

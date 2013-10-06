@@ -8,7 +8,6 @@ class ImprovedMessageWidgetPlugin : public QObject, public QDesignerCustomWidget
     Q_OBJECT
     Q_INTERFACES(QDesignerCustomWidgetInterface)
 
-
 public:
     ImprovedMessageWidgetPlugin(QObject *parent = 0);
 
@@ -25,7 +24,7 @@ public:
     void initialize(QDesignerFormEditorInterface *core);
 
 private:
-    bool m_initialized;
+    bool mInitialized;
 };
 
 #endif

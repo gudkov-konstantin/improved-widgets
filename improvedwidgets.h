@@ -18,7 +18,7 @@ public:
     virtual QList<QDesignerCustomWidgetInterface*> customWidgets() const;
 
 private:
-    QList<QDesignerCustomWidgetInterface*> m_widgets;
+    QList<QDesignerCustomWidgetInterface*> mWidgets;
 };
 
 #endif

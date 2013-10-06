@@ -6,22 +6,22 @@
 ImprovedMessageWidgetPlugin::ImprovedMessageWidgetPlugin(QObject *parent)
     : QObject(parent)
 {
-    m_initialized = false;
+    mInitialized = false;
 }
 
 void ImprovedMessageWidgetPlugin::initialize(QDesignerFormEditorInterface * /* core */)
 {
-    if (m_initialized)
+    if (mInitialized)
         return;
 
     // Add extension registrations, etc. here
 
-    m_initialized = true;
+    mInitialized = true;
 }
 
 bool ImprovedMessageWidgetPlugin::isInitialized() const
 {
-    return m_initialized;
+    return mInitialized;
 }
 
 QWidget *ImprovedMessageWidgetPlugin::createWidget(QWidget *parent)

@@ -1,15 +1,15 @@
-#ifndef IMPROVEDLINEEDITPLUGIN_H
-#define IMPROVEDLINEEDITPLUGIN_H
+#ifndef IMPROVEDBUSYINDICATORPLUGIN_H
+#define IMPROVEDBUSYINDICATORPLUGIN_H
 
 #include <QDesignerCustomWidgetInterface>
 
-class ImprovedLineEditPlugin : public QObject, public QDesignerCustomWidgetInterface
+class ImprovedBusyIndicatorPlugin : public QObject, public QDesignerCustomWidgetInterface
 {
     Q_OBJECT
     Q_INTERFACES(QDesignerCustomWidgetInterface)
 
 public:
-    ImprovedLineEditPlugin(QObject *parent = 0);
+    ImprovedBusyIndicatorPlugin(QObject *parent = 0);
 
     bool isContainer() const;
     bool isInitialized() const;
@@ -21,10 +21,11 @@ public:
     QString toolTip() const;
     QString whatsThis() const;
     QWidget *createWidget(QWidget *parent);
-    void initialize(QDesignerFormEditorInterface *core);
+    void initialize(QDesignerFormEditorInterface *);
 
 private:
     bool mInitialized;
+
 };
 
-#endif
+#endif // IMPROVEDBUSYINDICATORPLUGIN_H
