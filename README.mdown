@@ -13,7 +13,8 @@ This repository also consist plugin for QtDesigner.
 
 ## Building plugin
 
-```git clone https://github.com/gudkov-konstantin/improved-widgets.git
+```shell
+git clone https://github.com/gudkov-konstantin/improved-widgets.git
 mkdir build-iw
 cd build-iw
 qmake "CONFIG+=release" ../improved-widgets/improved-widgets.pro
@@ -22,5 +23,6 @@ make
 
 ## Installing plugin
 
-```cp libimprovedwidgetsplugin.so %QT_DIR%/qtbase/plugins/designer
+```shell
+cp libimprovedwidgetsplugin.so %QT_DIR%/qtbase/plugins/designer
 ```
