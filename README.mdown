@@ -8,6 +8,7 @@ Widgets list:
 
 * ImprovedMessageWidget - component KMessageWidget with feature show detailed message text.
 * ImprovedLineEdit - component QLineEdit with feature quick clean text.
+* ImprovedBusyIndicator - indicator to display the progress of a long process.
 
 This repository also consist plugin for QtDesigner.
 
