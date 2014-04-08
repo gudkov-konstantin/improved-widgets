@@ -27,3 +27,7 @@ make
 ```shell
 cp libimprovedwidgetsplugin.so %QT_DIR%/qtbase/plugins/designer
 ```
+or
+```shell
+sudo make install
+```
