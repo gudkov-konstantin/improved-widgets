@@ -364,6 +364,7 @@ void ImprovedMessageWidgetPrivate::createLayout()
         layout->addWidget(textLabel, 0, 1);
 
         QHBoxLayout *buttonLayout = new QHBoxLayout();
+        buttonLayout->setParent(layout);
         buttonLayout->setMargin(2);
         buttonLayout->addStretch();
         Q_FOREACH(QToolButton* button, buttons) {
@@ -385,6 +386,7 @@ void ImprovedMessageWidgetPrivate::createLayout()
         mainLayout->setMargin(2);
 
         QHBoxLayout *layout = new QHBoxLayout();
+        layout->setParent(mainLayout);
         layout->setMargin(2);
         layout->addWidget(iconLabel);
         layout->addWidget(textLabel);
